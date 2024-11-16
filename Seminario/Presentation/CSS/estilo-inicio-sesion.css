@@ -1,0 +1,17 @@
+﻿body {
+    background-color: #4ba3ea;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image:url('imagenes/img1.jpg');
+}
+.header {
+    color: #ffffff;
+    padding: 20px;
+    border: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

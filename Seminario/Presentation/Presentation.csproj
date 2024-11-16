@@ -1,0 +1,396 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D7B19B5-1305-40AF-A4CE-01076DFFCE06}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44386</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SimpleCrypto, Version=26.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleCrypto.0.3.30.26\lib\SimpleCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\estilo-categorias.css" />
+    <Content Include="CSS\estilo-inicio-sesion.css" />
+    <Content Include="CSS\estilo-login.css" />
+    <Content Include="CSS\imagenes\12.jpg" />
+    <Content Include="CSS\imagenes\13.jpg" />
+    <Content Include="CSS\imagenes\14.jpg" />
+    <Content Include="CSS\imagenes\21.jpg" />
+    <Content Include="CSS\imagenes\31.jpg" />
+    <Content Include="CSS\imagenes\32.jpg" />
+    <Content Include="CSS\imagenes\33.jpg" />
+    <Content Include="CSS\imagenes\CAR1.png" />
+    <Content Include="CSS\imagenes\CAR2.png" />
+    <Content Include="CSS\imagenes\CAR3.png" />
+    <Content Include="CSS\imagenes\Ellipse 1.png" />
+    <Content Include="CSS\imagenes\Ellipse 2.png" />
+    <Content Include="CSS\imagenes\Ellipse 3.png" />
+    <Content Include="CSS\imagenes\Ellipse 4.png" />
+    <Content Include="CSS\imagenes\HOMBRE.png" />
+    <Content Include="CSS\imagenes\img2.jpg" />
+    <Content Include="CSS\imagenes\img3.jpg" />
+    <Content Include="CSS\imagenes\img4.jpg" />
+    <Content Include="CSS\imagenes\img5.jpg" />
+    <Content Include="CSS\imagenes\img6.jpg" />
+    <Content Include="CSS\imagenes\imglogo.png" />
+    <Content Include="CSS\imagenes\INICIO.png" />
+    <Content Include="CSS\imagenes\MUJER.png" />
+    <Content Include="CSS\imagenes\N1.png" />
+    <Content Include="CSS\imagenes\N10.png" />
+    <Content Include="CSS\imagenes\N11.png" />
+    <Content Include="CSS\imagenes\N12.png" />
+    <Content Include="CSS\imagenes\N2.png" />
+    <Content Include="CSS\imagenes\N3.png" />
+    <Content Include="CSS\imagenes\N4.png" />
+    <Content Include="CSS\imagenes\N5.png" />
+    <Content Include="CSS\imagenes\N6.png" />
+    <Content Include="CSS\imagenes\N7.png" />
+    <Content Include="CSS\imagenes\N8.png" />
+    <Content Include="CSS\imagenes\N9.png" />
+    <Content Include="CSS\imagenes\NIÑOS.png" />
+    <Content Include="CSS\imagenes\PM1.png" />
+    <Content Include="CSS\imagenes\PM10.png" />
+    <Content Include="CSS\imagenes\PM11.png" />
+    <Content Include="CSS\imagenes\PM12.png" />
+    <Content Include="CSS\imagenes\PM2.png" />
+    <Content Include="CSS\imagenes\PM3.png" />
+    <Content Include="CSS\imagenes\PM4.png" />
+    <Content Include="CSS\imagenes\PM5.png" />
+    <Content Include="CSS\imagenes\PM6.png" />
+    <Content Include="CSS\imagenes\PM7.png" />
+    <Content Include="CSS\imagenes\PM8.png" />
+    <Content Include="CSS\imagenes\PM9.png" />
+    <Content Include="CSS\imagenes\PrdH1.png" />
+    <Content Include="CSS\imagenes\PrdH10.png" />
+    <Content Include="CSS\imagenes\PrdH11.png" />
+    <Content Include="CSS\imagenes\PrdH12.png" />
+    <Content Include="CSS\imagenes\PrdH2.png" />
+    <Content Include="CSS\imagenes\PrdH3.png" />
+    <Content Include="CSS\imagenes\PrdH4.png" />
+    <Content Include="CSS\imagenes\PrdH5.png" />
+    <Content Include="CSS\imagenes\PrdH6.png" />
+    <Content Include="CSS\imagenes\PrdH8.png" />
+    <Content Include="CSS\imagenes\PrdH9.png" />
+    <Content Include="CSS\imagenes\zapato-1.jpg" />
+    <Content Include="CSS\imagenes\zapato-2.jpg" />
+    <Content Include="CSS\imagenes\zapato-3.jpg" />
+    <Content Include="CSS\imagenes\estilo-detalle.css" />
+    <Content Include="WFPipesAndFilter.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="recursos\css\bootstrap-grid.css" />
+    <Content Include="recursos\css\bootstrap-grid.min.css" />
+    <Content Include="recursos\css\bootstrap-grid.rtl.css" />
+    <Content Include="recursos\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="recursos\css\bootstrap-reboot.css" />
+    <Content Include="recursos\css\bootstrap-reboot.min.css" />
+    <Content Include="recursos\css\bootstrap-reboot.rtl.css" />
+    <Content Include="recursos\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="recursos\css\bootstrap-utilities.css" />
+    <Content Include="recursos\css\bootstrap-utilities.min.css" />
+    <Content Include="recursos\css\bootstrap-utilities.rtl.css" />
+    <Content Include="recursos\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="recursos\css\bootstrap.css" />
+    <Content Include="recursos\css\bootstrap.min.css" />
+    <Content Include="recursos\css\bootstrap.rtl.css" />
+    <Content Include="recursos\css\bootstrap.rtl.min.css" />
+    <Content Include="recursos\js\bootstrap.bundle.js" />
+    <Content Include="recursos\js\bootstrap.bundle.min.js" />
+    <Content Include="recursos\js\bootstrap.esm.js" />
+    <Content Include="recursos\js\bootstrap.esm.min.js" />
+    <Content Include="recursos\js\bootstrap.js" />
+    <Content Include="recursos\js\bootstrap.min.js" />
+    <Content Include="singletonShoe.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WFHombre.aspx" />
+    <Content Include="WFInicio.aspx" />
+    <Content Include="WFMujer.aspx" />
+    <Content Include="WFNiños.aspx" />
+    <Content Include="WFProH1.aspx" />
+    <Content Include="WFProH2.aspx" />
+    <Content Include="WFProH3.aspx" />
+    <Content Include="WFProM1.aspx" />
+    <Content Include="WFProM2.aspx" />
+    <Content Include="WFProM3.aspx" />
+    <Content Include="WFProN1.aspx" />
+    <Content Include="WFProN2.aspx" />
+    <Content Include="WFProN3.aspx" />
+    <Content Include="WFUsers.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WFPipesAndFilter.aspx.cs">
+      <DependentUpon>WFPipesAndFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFPipesAndFilter.aspx.designer.cs">
+      <DependentUpon>WFPipesAndFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="singletonShoe.aspx.cs">
+      <DependentUpon>singletonShoe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="singletonShoe.aspx.designer.cs">
+      <DependentUpon>singletonShoe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFHombre.aspx.cs">
+      <DependentUpon>WFHombre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFHombre.aspx.designer.cs">
+      <DependentUpon>WFHombre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFInicio.aspx.cs">
+      <DependentUpon>WFInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFInicio.aspx.designer.cs">
+      <DependentUpon>WFInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFMujer.aspx.cs">
+      <DependentUpon>WFMujer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFMujer.aspx.designer.cs">
+      <DependentUpon>WFMujer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFNiños.aspx.cs">
+      <DependentUpon>WFNiños.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFNiños.aspx.designer.cs">
+      <DependentUpon>WFNiños.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProH1.aspx.cs">
+      <DependentUpon>WFProH1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProH1.aspx.designer.cs">
+      <DependentUpon>WFProH1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProH2.aspx.cs">
+      <DependentUpon>WFProH2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProH2.aspx.designer.cs">
+      <DependentUpon>WFProH2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProH3.aspx.cs">
+      <DependentUpon>WFProH3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProH3.aspx.designer.cs">
+      <DependentUpon>WFProH3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProM1.aspx.cs">
+      <DependentUpon>WFProM1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProM1.aspx.designer.cs">
+      <DependentUpon>WFProM1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProM2.aspx.cs">
+      <DependentUpon>WFProM2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProM2.aspx.designer.cs">
+      <DependentUpon>WFProM2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProM3.aspx.cs">
+      <DependentUpon>WFProM3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProM3.aspx.designer.cs">
+      <DependentUpon>WFProM3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProN1.aspx.cs">
+      <DependentUpon>WFProN1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProN1.aspx.designer.cs">
+      <DependentUpon>WFProN1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProN2.aspx.cs">
+      <DependentUpon>WFProN2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProN2.aspx.designer.cs">
+      <DependentUpon>WFProN2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFProN3.aspx.cs">
+      <DependentUpon>WFProN3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFProN3.aspx.designer.cs">
+      <DependentUpon>WFProN3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFUsers.aspx.cs">
+      <DependentUpon>WFUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFUsers.aspx.designer.cs">
+      <DependentUpon>WFUsers.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="recursos\css\bootstrap-grid.css.map" />
+    <Content Include="recursos\css\bootstrap-grid.min.css.map" />
+    <Content Include="recursos\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="recursos\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="recursos\css\bootstrap-reboot.css.map" />
+    <Content Include="recursos\css\bootstrap-reboot.min.css.map" />
+    <Content Include="recursos\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="recursos\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="recursos\css\bootstrap-utilities.css.map" />
+    <Content Include="recursos\css\bootstrap-utilities.min.css.map" />
+    <Content Include="recursos\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="recursos\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="recursos\css\bootstrap.css.map" />
+    <Content Include="recursos\css\bootstrap.min.css.map" />
+    <Content Include="recursos\css\bootstrap.rtl.css.map" />
+    <Content Include="recursos\css\bootstrap.rtl.min.css.map" />
+    <Content Include="recursos\js\bootstrap.bundle.js.map" />
+    <Content Include="recursos\js\bootstrap.bundle.min.js.map" />
+    <Content Include="recursos\js\bootstrap.esm.js.map" />
+    <Content Include="recursos\js\bootstrap.esm.min.js.map" />
+    <Content Include="recursos\js\bootstrap.js.map" />
+    <Content Include="recursos\js\bootstrap.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{2bbae4e9-6633-449f-b459-08f648e6d2c6}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Moldel\Moldel.csproj">
+      <Project>{ecf3581b-d096-4b61-be9e-fd322b782ed7}</Project>
+      <Name>Moldel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Singleton\Singleton.csproj">
+      <Project>{33a0acd0-ee7f-4da5-af27-ee9d7aaf879b}</Project>
+      <Name>Singleton</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="recursos\imagen\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49700</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44386/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
